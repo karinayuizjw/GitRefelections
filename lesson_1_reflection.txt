@@ -1,0 +1,61 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    $ diff -u oldfile newfile
+    - means the content exists in the old file
+    + means the content exists in the new file
+    # this may be changeable according to the description at the beginning
+    --- and +++
+    To use 'diff' command line, we can automatically find differencs between
+    two files which is much more efficient.
+    And it's a good way to find typo.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Online file arrangement systems such as Dropbox, Google Docs and even
+    wikipedia have version control systems.
+    It's easy way to find old file version back.
+    And compare the modification made by different programmers.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    pros:  more flexible to create checkpoints (commits) with proper message.
+    cons:  easy to make too big / too small commits.
+    e.g.    too big -- mix too many changes in the document
+            too small -- too frequently.
+            good exp -- make commit per logical change.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Git:   more useful to create repository webpage files / project coding files,
+        these files are composed of various file types, e.g. html, css, js
+    Other VCS like GoogleDoc:    more suitable for text file, e.g. doc / ppt,
+        all the contents exist in a single file.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    $ git log
+    This command is to show all the recent commits we have.
+    Use PageDown button to show more commits not appeared properly.
+    $ git diff first_commit_ID second_commit_ID
+    Show the difference between two commmits.
+    $ git config --global color.ui auto
+    show colors for modification, red for deletion, green for insertion.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    $ git checkout older_commit_id
+    This command could help to set a previous version of commit as the HEAD (the most
+    recent commit). the current file stored under repository is back to the new HEAD.
+    It could help me to find the bug much easier.
+    Just remember the latest commit id, we can set back to it easily:
+    $ git checkout latest_commit_id
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    try to use git to create repository of files and manage them efficiently.
