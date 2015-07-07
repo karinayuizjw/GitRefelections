@@ -21,13 +21,47 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	1. git checkout   --> make the buggy version as the HEAD
+	2. save changes to the working directory
+	3. add modified files to the staging area
+	4. git commit  -->   make new commit to the repository
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	branches work when I want to have several testing versions derived from one
+	main version towards various clients.
+	I can make copy from master branch and name it as other branch.
+	Make changes to this version and add commit in repository.
+	$ git branch    ----    show all branches I have
+	$ git branch argument   ----  make new branch
+	$ git checkout branch_name   ----   checkout branch_name
+
 How do the diagrams help you visualize the branch structure?
+
+	$ git log --graph --oneline branch_1 branch_2 branch_3 ...
+	clearly show the master (main) branch and other sub-branches.
+	$ git checkout -b new_branch_name
+	This can create a new branch with the new_branch_name,
+	and check out this new branch as the current branch.
+	This command is useful to add new features.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	$ git merge branch_1 branch_2
+	merge current branch with branch_1 and branch_2
+	therefore, we have a new branch with two parents
+	$ git merge --abort
+	restore files to their state before merging
+	represent in diagram is easy to see their relationship more clearly
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+	automatic merging :
+	easy to operate but, on the other hand, easy to cause conflict
+	we have to fix the conflict manually.
+	Manually merging  :
+	1. set one of the branches to be the current checkout
+	2. merge current checkout with another branch
