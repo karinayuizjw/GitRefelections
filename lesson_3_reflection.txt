@@ -1,19 +1,20 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
 
-    A remote repository is a good way to share my work with others and let them 
-    make commits on it. 
+    A remote repository is a good way to share my work with others and let them
+    make commits on it.
     Related command:
     $ git remote    -->    show the current remote
     $ git remote -v  -->   with more details (fetch / push address)
     $ git remote add origin URL   -->   if I just have one remote, add it as origin
-    $ git push remote_name branch_name  -->  copy the branch from local repository 
+    $ git push remote_name branch_name  -->  copy the branch from local repository
     to GitHub repository.
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    Manually pull changes allows me to avoid updating uncomplete version to GitHub.
+    This is good for organizing versions in a more clear and efficient way.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
