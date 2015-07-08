@@ -31,7 +31,11 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    $ git fetch remote_name
+    This command could help me get the lastest version of remote repository
+    and make a new branch to my local repository.
+    This is safe when we have some changes both in local and remote repositories.
+    And then we can do merge as what we learnt in lesson_2.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
