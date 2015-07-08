@@ -40,7 +40,11 @@ stored locally?
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    Use dropbox or other online disk to share files with other collaborates.
+    To see the difference between various versions, use diff or other file comparison
+    editor. It's hard to operate and easy to become confused.
+    I think Git and GitHub is a good tool to organize the files.
+    I find it's really convenient to use Git and like it.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
