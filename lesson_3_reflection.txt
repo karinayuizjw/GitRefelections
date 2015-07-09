@@ -49,4 +49,8 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    make separate branch when I want to add some new features or do some testing
+    which may not be stable. Or I and other collaborator are working on the same
+    work, it's better to have separate branch. It is easy to merge our work without
+    conflicts.
+    Once the changes are agreed by all the developers, merge the branch into master.
